@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/towerSiegeHelp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#87CEEB"
+    android:screenOrientation="landscape"
+    tools:context=".HelpScreen">
+
+    <ImageView
+        android:id="@+id/floor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/floorconcept" />
+
+    <Button
+        android:id="@+id/leftHand"
+        android:layout_width="72dp"
+        android:layout_height="200dp"
+        android:clickable="false"
+        android:text="move left"
+        android:textColor="#000000"
+        android:textSize="10sp"
+        app:backgroundTint="#32cd32"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/rightHand"
+        android:layout_width="72dp"
+        android:layout_height="200dp"
+        android:clickable="false"
+        android:text="Move Right"
+        android:textColor="#000000"
+        android:textSize="10sp"
+        app:backgroundTint="#32cd32"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/character"
+        android:layout_width="102dp"
+        android:layout_height="115dp"
+        android:layout_margin="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.722"
+        app:srcCompat="@drawable/character" />
+
+    <Button
+        android:id="@+id/jump"
+        android:layout_width="170dp"
+        android:layout_height="65dp"
+        android:clickable="false"
+        android:text="This is the jump button"
+        android:textColor="#0C0C0C"
+        app:backgroundTint="#FFFF66"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias=".955"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.1" />
+
+    <Button
+        android:id="@+id/shoot"
+        android:layout_width="170dp"
+        android:layout_height="65dp"
+        android:clickable="false"
+        android:text="This is the shoot button"
+        app:backgroundTint="#CC0000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.955"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.955" />
+
+    <!-- Change to settings when you can make a modal window -->
+    <Button
+        android:id="@+id/mainMenu"
+        android:layout_width="100dp"
+        android:layout_height="75dp"
+        android:onClick="landingScreen"
+        android:text="Main Menu"
+        android:textSize="10sp"
+        app:backgroundTint="#7138D6"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.132"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.047" />
+
+    <TextView
+        android:id="@+id/characterDescription"
+        android:layout_width="104dp"
+        android:layout_height="36dp"
+        android:text="This is you! :)"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.48" />
+</androidx.constraintlayout.widget.ConstraintLayout>
